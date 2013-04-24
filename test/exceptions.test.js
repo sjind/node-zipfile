@@ -11,9 +11,4 @@ describe('Exceptions', function(){
       assert.throws(function() { new zipfile.ZipFile('./test/data/invalid.zip'); });
     });
 
-    it('should throw as the file in the archive does not exit', function(){
-      var zf = new zipfile.ZipFile('./test/data/folder.zip');
-      assert.throws(function() { zf.readFileSync('foo'); });
-    });
-
 });
