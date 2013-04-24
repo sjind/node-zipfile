@@ -2,6 +2,9 @@
 
 var zipfile = require('./lib/zipfile');
 var assert = require('assert');
+var path = require('path');
+var mkdirP= require('mkdirp');
+var fs = require('fs');
 
 // node compatibility for mkdirs below
 var constants = (!process.EEXIST >= 1) ?
@@ -9,7 +12,7 @@ var constants = (!process.EEXIST >= 1) ?
     { EEXIST: process.EEXIST };
 
 
-var zf = new zipfile.ZipFile('./data/world_merc.zip');
+var zf = new zipfile.ZipFile('./test/data/world_merc.zip');
 
 // test writing with Sync reading method
 // and sync node writing functions
@@ -53,5 +56,6 @@ zf.names.forEach(function(name) {
         }
     });
 });
+
 
 console.log('All tests pass...');
