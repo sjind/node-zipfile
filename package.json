@@ -13,14 +13,14 @@
   "contributors"  : [],
   "licenses"      : ["BSD"],
   "dependencies"  : {
-    "nan": "~1.7.0",
-    "node-pre-gyp": "~0.6.4"
+    "nan": "~2.0.2",
+    "node-pre-gyp": "~0.6.9"
   },
   "bundledDependencies":["node-pre-gyp"],
   "devDependencies": {
-    "mocha": "1.x",
+    "mocha": "~2.2.5",
     "mkdirp": "~0.5.0",
-    "aws-sdk": "~2.0.25",
+    "aws-sdk": "~2.1.43",
     "queue-async":"~1.0.7"
   },
   "bin"           : { 
